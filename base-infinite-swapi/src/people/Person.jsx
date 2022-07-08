@@ -1,11 +1,14 @@
-export function Person({ name, hairColor, eyeColor }) {
+const Person = ({ person }) => {
+  const { name, hair_color, eye_color } = person;
   return (
     <li>
       {name}
       <ul>
-        <li>hair: {hairColor}</li>
-        <li>eyes: {eyeColor}</li>
+        <li>hair: {hair_color}</li>
+        <li>eyes: {eye_color}</li>
       </ul>
     </li>
   );
-}
+};
+
+export default Person;
